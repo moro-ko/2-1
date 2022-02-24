@@ -6,8 +6,9 @@ class BooksController < ApplicationController
   end
 
   def index
-    @book = Book.new
+    @new_book = Book.new
     @books = Book.all
+    # @book = Book.find(params[:id])
   end
 
   def create
